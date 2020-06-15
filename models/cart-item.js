@@ -3,7 +3,8 @@ class CartItem {
         this.quantity = quantity;
         this.productPrice = productPrice;
         this.productTitle = productTitle;
-        this.sum - sum;
+        this.sum = sum;
     }
 }
+
 export default CartItem;
