@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, Button, StyleSheet, ScrollView } from 'react-native';
+import { ScrollView, View, Text, Image, Button, StyleSheet } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 
 import Colors from '../../constants/Colors';
@@ -10,7 +10,6 @@ const ProductDetailScreen = (props) => {
     const selectedProduct = useSelector((state) =>
         state.products.availableProducts.find((prod) => prod.id === productId)
     );
-
     const dispatch = useDispatch();
 
     return (

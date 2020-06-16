@@ -1,5 +1,4 @@
 import { ADD_ORDER } from '../actions/orders';
-import CartItem from '../../models/cart-item';
 import Order from '../../models/order';
 
 const initialState = {
@@ -20,5 +19,6 @@ export default (state = initialState, action) => {
                 orders: state.orders.concat(newOrder),
             };
     }
+
     return state;
 };

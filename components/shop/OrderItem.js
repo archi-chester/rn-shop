@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
-import Colors from '../../constants/Colors';
 import CartItem from './CartItem';
+import Colors from '../../constants/Colors';
 import Card from '../UI/Card';
 
 const OrderItem = (props) => {
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     summary: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignContent: 'center',
+        alignItems: 'center',
         width: '100%',
         marginBottom: 15,
     },
@@ -55,8 +55,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     date: {
-        fontFamily: 'open-sans',
         fontSize: 16,
+        fontFamily: 'open-sans',
         color: '#888',
     },
     detailItems: {

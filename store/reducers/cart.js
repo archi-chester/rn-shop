@@ -1,6 +1,6 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/cart';
-import CartItem from '../../models/cart-item';
 import { ADD_ORDER } from '../actions/orders';
+import CartItem from '../../models/cart-item';
 import { DELETE_PRODUCT } from '../actions/products';
 
 const initialState = {
@@ -18,7 +18,7 @@ export default (state = initialState, action) => {
             let updatedOrNewCartItem;
 
             if (state.items[addedProduct.id]) {
-                // already have item in the cart
+                // already have the item in the cart
                 updatedOrNewCartItem = new CartItem(
                     state.items[addedProduct.id].quantity + 1,
                     prodPrice,
@@ -38,7 +38,7 @@ export default (state = initialState, action) => {
             const currentQty = selectedCartItem.quantity;
             let updatedCartItems;
             if (currentQty > 1) {
-                //  need to reduce it not erase it
+                // need to reduce it, not erase it
                 const updatedCartItem = new CartItem(
                     selectedCartItem.quantity - 1,
                     selectedCartItem.productPrice,
@@ -70,5 +70,6 @@ export default (state = initialState, action) => {
                 totalAmount: state.totalAmount - itemTotal,
             };
     }
+
     return state;
 };

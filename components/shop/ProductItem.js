@@ -4,7 +4,6 @@ import {
     Text,
     Image,
     StyleSheet,
-    Button,
     TouchableOpacity,
     TouchableNativeFeedback,
     Platform,
@@ -65,14 +64,14 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     title: {
+        fontFamily: 'open-sans-bold',
         fontSize: 18,
         marginVertical: 2,
-        fontFamily: 'open-sans-bold',
     },
     price: {
+        fontFamily: 'open-sans',
         fontSize: 14,
         color: '#888',
-        fontFamily: 'open-sans',
     },
     actions: {
         flexDirection: 'row',
