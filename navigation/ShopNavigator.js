@@ -106,9 +106,9 @@ const AuthNavigator = createStackNavigator(
     }
 );
 
-// const MainNavigator = createSwitchNavigator({
-//     Auth: AuthNavigator,
-//     Shop: ShopNavigator,
-// });
+const MainNavigator = createSwitchNavigator({
+    Auth: AuthNavigator,
+    Shop: ShopNavigator,
+});
 
-export default createAppContainer(AuthNavigator);
+export default createAppContainer(MainNavigator);
