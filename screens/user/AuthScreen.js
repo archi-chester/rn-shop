@@ -35,6 +35,7 @@ const formReducer = (state, action) => {
 
 const AuthScreen = (props) => {
     const [isSignup, setIsSignup] = useState(false);
+    
     const dispatch = useDispatch();
 
     const [formState, dispatchFormState] = useReducer(formReducer, {
